@@ -16,15 +16,15 @@ There are two files you need to add to your web page in order to get effects
 ### To install in current project (folder)
 
 ```
-$ npm install glass
+$ npm install @lassi/glass
 $ npm install
 ```
 
 ### To install gloabally then add to project
 
 ```
-$ npm install -g glass
-$ npm install glass
+$ npm install -g @lassi/glass
+$ npm install @lassi/glass
 $ npm install
 ```
 
