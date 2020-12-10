@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/glass.css" />
+		<style>
+			body {
+				padding: 20px 50px;
+			}
+
+			.box {
+				width: 300px;
+				height: 100px;
+				background-color: rgb(199, 120, 120);
+				font-family: "Gill Sans", Calibri, sans-serif;
+				font-size: larger;
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			main {
+				display: grid;
+				row-gap: 50px;
+			}
+
+			section {
+				font-family: "Lucida Sans";
+			}
+
+			section div {
+				margin-bottom: 10px;
+			}
+
+			code {
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+
+			.red-box {
+				background-color: rgb(255, 100, 0);
+				color: white;
+				font-size: 30px;
+			}
+
+			img {
+				width: 300px;
+			}
+		</style>
+		<title>Glass</title>
+	</head>
+	<body>
+		<main>
+			<section>
+				<h2>Default Glass behaviour</h2>
+				<div class="glass box">Hello World</div>
+			</section>
+
+			<section>
+				<h2>Customized Glass behaviour</h2>
+				<code>
+					data-shine-color="#fffa" <br />
+					data-shine-opacity="0.2" <br />
+					data-shine-duration="1s"
+				</code>
+				<div
+					class="glass box"
+					data-shine-color="#fffa"
+					data-shine-opacity="0.2"
+					data-shine-duration="1s"
+				>
+					Hello World
+				</div>
+			</section>
+
+			<section>
+				<h2>Glass behaviour on Text</h2>
+				<div>
+					You have to match shine color with background color to get the best
+					effect
+				</div>
+
+				<code>
+					data-shine-color="rgba(255, 100, 0, 0.4)" <br />
+					data-shine-duration="1s"
+				</code>
+
+				<div class="box red-box">
+					<h2
+						class="sample-text glass"
+						data-shine-color="rgba(255, 100, 0, 0.4)"
+						data-shine-duration="1s"
+					>
+						Hover Me
+					</h2>
+				</div>
+			</section>
+
+			<section>
+				<h2>Glass effect on an Image</h2>
+
+				<div>
+					You have to add inline elements inside a block level element to get
+					the effect
+				</div>
+
+				<code>
+					data-shine-color="#f082" <br />
+					data-shine-duration="1.2s"
+				</code>
+
+				<div
+					class="glass"
+					style="width: fit-content"
+					data-shine-color="#f082"
+					data-shine-duration="1.2s"
+				>
+					<img src="./sample-image.jpg" alt="Glass effect on Image" />
+				</div>
+			</section>
+		</main>
+
+		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../scripts/glass.js"></script>
+	</body>
+</html>

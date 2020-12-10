@@ -1,0 +1,24 @@
+{
+	"name": "glass",
+	"version": "1.0.0",
+	"description": "Add Glass effects to HTML elements",
+	"author": "Lasindu Nuwanga",
+	"license": "MIT",
+	"dependencies": {
+		"@types/jquery": "^3.5.4",
+		"jquery": "^3.5.1"
+	},
+	"main": "scripts/glass.js",
+	"devDependencies": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LassazVegaz/Glass.git"
+	},
+	"keywords": [
+		"glass"
+	],
+	"bugs": {
+		"url": "https://github.com/LassazVegaz/Glass/issues"
+	},
+	"homepage": "https://github.com/LassazVegaz/Glass#readme"
+}
